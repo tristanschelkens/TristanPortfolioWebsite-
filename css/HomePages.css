@@ -242,7 +242,7 @@ h3 {
   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 .facilities-col:hover img {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .facilities-col p {
   padding: 0;
