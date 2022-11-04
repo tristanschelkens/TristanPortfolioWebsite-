@@ -20,7 +20,7 @@ function getInfoTwo() {
 
   if (!password)
     return function getInfoTree() {
-      open("../LoginWebsite/../html/../CreateAccount/CreateAccount.html");
+      open("../html/../CreateAccount/CreateAccount.html");
     };
 
   con.query(
