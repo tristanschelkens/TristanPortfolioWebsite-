@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Weekly Agenda - Login</title>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../../css/LoginPage.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html"><img src="../../images/logo.png" /></a>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="../HomePage/Home.html">HOME</a></li>
+          <li><a href="../HomePage/About.html">ABOUT</a></li>
+          <li><a href="../HomePage/Contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu1"></i>
+    </nav>
+    <div class="login-box">
+      <h1>Login</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" id="username" />
+      </div>
+
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" id="password" />
+      </div>
+
+      <input type="button" class="btn" value="Sign In" onclick="getInfoTwo()" />
+
+      <script src="../../js/Login.js"></script>
+      <div class="line"></div>
+
+      <input
+        type="button"
+        class="btn"
+        value="Create an Account"
+        onclick="getinfoTree()"
+      />
+      <script src="../../js/OpenCreateAccountSite.js"></script>
+    </div>
+  </body>
+</html>
