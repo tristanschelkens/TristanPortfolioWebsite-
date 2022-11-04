@@ -227,7 +227,7 @@ h3 {
 .facilities-col {
   flex-basis: 31%;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 0%;
   text-align: left;
   transition: 0.5s;
 }
