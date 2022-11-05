@@ -19,31 +19,73 @@
       </div>
 
       <i class="fa fa-bars" onclick="showMenu1"></i>
+
+
     </nav>
+      
     <div class="login-box">
       <h1>Login</h1>
+
+      <form
+      name="f1"
+      action="authentication.php"
+      onsubmit="return validation()"
+      method="POST"
+    >
       <div class="textbox">
         <i class="fas fa-user"></i>
-        <input type="text" placeholder="Username" id="username" />
+        <input type="text" placeholder="Username" id="username" name="username" />
       </div>
 
       <div class="textbox">
         <i class="fas fa-lock"></i>
-        <input type="password" placeholder="Password" id="password" />
+        <input type="password" placeholder="Password" id="password" name="password"/>
       </div>
 
-      <input type="button" class="btn" value="Sign In" onclick="getInfoTwo()" />
+      <!-- <p>
+        <label> UserName: </label>
+        <input type="text" id="user" name="user" />
+      </p>
+      <p>
+        <label> Password: </label>
+        <input type="password" id="pass" name="pass" />
+      </p> -->
 
-      <script src="../../js/GetInfoTwo.js"></script>
+      <input
+        type="submit"
+        class="btn"
+        value="Sign In"
+      />
       <div class="line"></div>
 
       <input
         type="button"
         class="btn"
-        value="Create an Account"
-        onclick="getinfoTree()"
+        value="Create Account"
+        onclick="getInfoTree()"
       />
+
       <script src="../../js/GetInfoTree.js"></script>
     </div>
+
+    <script>
+      function validation() {
+        var id = document.f1.username.value;
+        var ps = document.f1.password.value;
+        if (id.length == "" && ps.length == "") {
+          alert("User Name and Password fields are empty");
+          return false;
+        } else {
+          if (id.length == "") {
+            alert("User Name is empty");
+            return false;
+          }
+          if (ps.length == "") {
+            alert("Password field is empty");
+            return false;
+          }
+        }
+      }
+    </script>
   </body>
 </html>
