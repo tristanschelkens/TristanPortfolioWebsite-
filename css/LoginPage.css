@@ -17,6 +17,9 @@ body {
   border-radius: 20px;
   padding: 30px;
 }
+.login-box footer {
+  text-align: right;
+}
 .login-box h1 {
   float: left;
   font-size: 40px;

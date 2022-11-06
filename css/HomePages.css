@@ -198,7 +198,7 @@ h3 {
   transition: 1s;
 }
 .layer:hover {
-  background: rgba(211, 0, 0, 0.2);
+  background: #89cff0;
 }
 .layer h3 {
   width: 100%;
@@ -536,4 +536,9 @@ h3 {
   outline: none;
   border: 1px solid #ccc;
   box-sizing: border-box;
+}
+.contact-col message {
+  border-color: #89cff0;
+  color: #89cff0;
+  outline-color: #89cff0;
 }
