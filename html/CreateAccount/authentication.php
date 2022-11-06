@@ -20,7 +20,7 @@
         values(?, ?, ?, ?, ?)");
         $stmt->bind_param("sssss",$name,$lastName,$username,$email,$password);
         $stmt->execute();
-        echo "Registration Successfully.";
+        echo "<h1>Registration Successfully.</h1>";
         $stmt->close();
         $con->close();
     }
